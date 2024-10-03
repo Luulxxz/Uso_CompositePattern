@@ -42,7 +42,7 @@ final class TSqlInsert extends TSqlInstruction{
     /*Método setCriteria()
     não existe no contexto dessa classe, irá lançar um erro se for executado
     */
-    public function setCriteria(Tcriteria,$criteria){
+    public function setCriteria($criteria){
         // lança o erro
         throw new TException("Canot Call setCriteria from" . __CLASS__);
     }
